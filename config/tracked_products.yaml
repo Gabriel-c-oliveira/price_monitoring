@@ -1,0 +1,27 @@
+# Insert the product name to identify them, keywords to select the correct ads by title (case insensitive) and the URLs of different stores to search for prices
+# If the URLs only contain offers for the desired product, the keyword parameter can be left empty
+
+# Product 1
+- name: 'RTX 4070 12GB'
+  keywords: 
+    - 'rtx'
+    - '4070'
+    - '12'
+  url_kabum: 'https://www.kabum.com.br/hardware/placa-de-video-vga/placa-de-video-nvidia?page_number=1&page_size=20&facet_filters=eyJHZUZvcmNlIFJUWCBTw6lyaWUgNDAiOlsiUlRYIDQwNzAiXX0=&sort=-number_ratings'
+  url_amazon: 'https://www.amazon.com.br/s?k=4070+12GB&i=computers&rh=n%3A16364811011%2Cp_n_condition-type%3A13862762011%2Cp_72%3A17833785011&dc&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&qid=1709437170&rnid=5560472011&ref=sr_nr_p_72_3&ds=v1%3AhdlELetk%2Fdbi65AMBqGPf2Y5jTm6jxhPJMvGKDCnJsA'
+  url_mercado_livre: 'https://lista.mercadolivre.com.br/informatica/componentes-pc/placas/placas-video/rtx-4070-12gb_NoIndex_True#D[A:rtx%204070%2012gb,L:undefined,on]'
+  url_terabyte: 'https://www.terabyteshop.com.br/busca?str=rtx+4070+12gb'
+  url_pichau: 'https://www.pichau.com.br/search?q=rtx%204070%2012Gb&product_category=6459&rgpu=7369'
+
+# Product 2
+- name: 'RTX 4070 Ti 12GB'
+  keywords:
+    - 'rtx'
+    - '4070'
+    - 'Ti'
+    - '12'
+  url_kabum: 'https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=20&facet_filters=eyJHZUZvcmNlIFJUWCBTw6lyaWUgNDAiOlsiUlRYIDQwNzAgVGkiXX0=&sort=most_searched'
+  url_amazon: 'https://www.amazon.com.br/s?k=4070+ti+12GB&i=computers&rh=n%3A16364811011%2Cp_n_condition-type%3A13862762011%2Cp_72%3A17833785011&dc&ds=v1%3AIFFJnGP4nGcKQ%2FEC2xQzzcNqPpFeCidKr%2Fxl5WM2zvE&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&qid=1709437112&rnid=5560472011&ref=sr_nr_p_72_3'
+  url_mercado_livre: 'https://lista.mercadolivre.com.br/informatica/componentes-pc/placas/placas-video/rtx-4070-ti-12gb_NoIndex_True#D[A:rtx%204070%20ti%2012gb,L:undefined,on]'
+  url_terabyte: 'https://www.terabyteshop.com.br/busca?str=RTX+4070+Ti+12gb'
+  url_pichau: 'https://www.pichau.com.br/search?q=rtx%204070%20ti%2012Gb&product_category=6459&rgpu=7208'

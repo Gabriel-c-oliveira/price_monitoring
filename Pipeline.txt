@@ -1,0 +1,34 @@
+1 - User-inputs
+    - User sets browser, user-agent, product name, keywords, store search URLs 
+    - Files: config/browser.yaml, monitored_products.yaml
+
+2 - Web Driver Configer
+    - Check the validity of user-input parameters and create a web driver for the chosen browser
+    - Libraries: Selenium
+    - Files: src/data/web_driver_configer.py
+    
+3 - Web Scraper
+    - Retrieve all offer data from the sites, utilizing distinct web scraping parameters for each store.
+    - Libraries: Beautiful Soup
+    - Files: src/data/web_scraper.py
+
+4 - Store Best Offer Finder
+    - For each store, retrieve the lowest-priced offer with a title that matches the desired product keywords.
+    - Libraries: Selenium, Beautiful Soup
+    - Files: src/data/store_best_offer_finder.py
+             data/latest_scraped_offers.csv
+
+5 - Price History Updater
+    - Identify the daily and historical best prices for products, and then update the price history CSV files
+    - Libraries: pandas, NumPy, datetime
+    - Files: src/features/price_history_updater.py
+             data/[product_name].csv
+
+6 - Process Price History
+    - Prepare price history data for visualization in the web application
+    - Libraries: pandas
+
+7 - Dashboard Generator
+    - Web application to visualize products price history data
+    - Libraries: Streamlit, pandas, datetime, Plotly
+    - Files: src/visualization/dashboard_generator.py
