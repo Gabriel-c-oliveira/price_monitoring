@@ -8,7 +8,7 @@ class WebScraper:
     Set up web scraping parameters according to the store and then attempt to gather offer data from the site.
     """
 
-    kabum = {'tag_products': 'div', 'attribute_products': 'class', 'value_products': 'productCard',
+    kabum = {'tag_products': 'article', 'attribute_products': 'class', 'value_products': 'productCard',
             'tag_title': 'span', 'attribute_title': 'class', 'value_title': 'nameCard',
             'tag_price': 'span', 'attribute_price': 'class', 'value_price': 'priceCard'}
 
