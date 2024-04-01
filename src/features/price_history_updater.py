@@ -100,8 +100,9 @@ class PriceHistoryUpdater:
                 concated_daily_prices_df = pd.concat(objs=[current_prices_df, product_df], axis=0, ignore_index=True)
 
                 # Remove duplicate rows based on store and date, retaining the minimum daily price for each store
-                _index_min_store_daily_price =  concated_daily_prices_df.groupby(['Store', 'Date']).Price.idxmin()
-                updated_price_history_df =  concated_daily_prices_df.loc[_index_min_store_daily_price]
+                _index_min_store_daily_price = concated_daily_prices_df.groupby(['Store', 'Date']).Price.idxmin()
+                min_current_prices_df = concated_daily_prices_df.loc[_index_min_store_daily_price]
+                updated_price_history_df = pd.concat(objs=[past_prices_df, min_current_prices_df], axis=0, ignore_index=True)
 
             print(colored(f"Successfully updated price history of {product_name} with prices of {self.today}", 'green'))
 
