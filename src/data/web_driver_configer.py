@@ -69,7 +69,7 @@ class WebDriverConfiger:
                 print(colored(f"Warning: No valid URL was set for product '{product['name']}' in config/tracked_products.yaml", "yellow"))
                 
         if success_bool:
-            print(colored(f"Successfully processed the list of tracked products", "green"))
+            print("Successfully processed the list of tracked products")
 
         return success_bool
 

@@ -108,7 +108,7 @@ class StoreBestOfferFinder:
 
     def check_web_scrapping_results(self, store_offers: dict[str, int]) -> bool:
         if store_offers:
-            print(colored(f"Successfully take the prices of product '{self.product_info['name']}' from {self.site_info['name']}'s site", 'green'))
+            print(colored(f"Successfully took the prices of product '{self.product_info['name']}' from {self.site_info['name']}'s site", 'green'))
             return True
         else:
             print(colored(f"Error: No price for product '{self.product_info['name']}' was found in {self.site_info['name']}'s site. Check if the URL is correct: {self.site_info['url']}", "red"))

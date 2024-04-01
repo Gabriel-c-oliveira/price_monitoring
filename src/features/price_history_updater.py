@@ -52,7 +52,7 @@ class PriceHistoryUpdater:
     
             updated_price_history_df = self.update_single_product_price_history(product_df, price_history_df, product_name)
 
-            # Save update price history of a product
+            # Save updated price history of a product
             updated_price_history_df.to_csv(price_history_path, sep=';', index=False)
                  
             updated_price_history_list_df.append(updated_price_history_df)

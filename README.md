@@ -13,7 +13,7 @@ Project for monitoring product prices through web scraping from various e-commer
 
 ## Installation
 
-It is necessary to have Python installed, preferably version 3.11 (or newer), in which this project was developed
+It is necessary to have Python installed, preferably version 3.11 (or newer), in which this project was developed.
 
 Clone the repository into the folder of your choice on computer:
 
@@ -32,7 +32,7 @@ pip install requirements.txt
 Open the file `config/browser.yaml` and define the browser that will be used for data scraping. Chrome and Edge are available options. Also, include your user-agent, which you can easily find by searching "my user-agent" on Google.
 
 ```
-# browser.yaml - exemplo
+# browser.yaml - example
 browser: 'edge'
 
 user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
@@ -41,7 +41,7 @@ user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 Insert in the file `config/tracked_products.yaml` the information for each product you want to track: a name for identification, keywords to select only the ads containing them, and URLs resulting from the search for the product on different websites where data collection will take place.
 
 ```
-# tracked_products.yaml - exemplo
+# tracked_products.yaml - example
 - name: 'RTX 4070 12GB'
   keywords:
     - 'rtx'
